@@ -1,0 +1,35 @@
+{
+  "name": "nhkz-hello-npm",
+  "version": "0.0.1-rc3",
+  "description": "An introductory hello-world npm package.",
+  "main": "build/index.js",
+  "scripts": {
+    "dev": "watch 'npm run build' src",
+    "build": "babel src --out-dir build",
+    "test": "jest",
+    "test:watch": "npm test -- --watch",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hanisahkz/hello-npm.git"
+  },
+  "keywords": [
+    "hello-world"
+  ],
+  "author": "Nurul Zaman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hanisahkz/hello-npm/issues"
+  },
+  "homepage": "https://github.com/hanisahkz/hello-npm#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.7.7",
+    "@babel/core": "^7.7.7",
+    "@babel/preset-env": "^7.7.7",
+    "core-js": "^3.6.1",
+    "jest": "^24.9.0",
+    "watch": "^1.0.2"
+  },
+  "dependencies": {}
+}
